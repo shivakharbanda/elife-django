@@ -1,0 +1,111 @@
+.main {
+    display: flex;
+    margin: 25px 50px;
+    flex-direction: column;
+}
+
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+body {
+    background: #fafafa;
+    color: #333333;
+    
+}
+
+site-header .navbar-nav .nav-link {
+    color: #cbd5db;
+}
+  
+.site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+  
+.site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+}
+
+.content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 2em;
+}
+
+.card {
+    border: solid;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower {
+    display: flex;
+    flex-direction: column;
+}
+
+.upper h4, .lower h5 {
+    font: bolder;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    justify-content: left;
+}
+
+.item-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-1 svg, .item-1 p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.item-1 svg {
+    margin-right: 10px;
+}
+
+.item-1 p {
+    margin-right: 25px;
+}
+
+.item-1 .speed {
+    margin-right: 15px;
+}
+
+.form {
+    border: solid;
+    border-width: thin;
+    padding: 10px 25px;
+}
