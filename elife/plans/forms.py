@@ -7,13 +7,30 @@ from users.models import CustomUser
 
 
 class BuyPlanForm(forms.ModelForm):
+    error_css_class = 'error-field'
+    required_css_class = 'required-field'
+    pack = forms.ModelChoiceField(Plans.objects.all(), widget=forms.RadioSelect())
 
     class Meta():
         model = Orders
-        fields = "__all__"
+        fields = ['pack']
 
-    def __init__(self, *args, **kwargs):
+    
 
-        self.user = CustomUser
-        super(BuyPlanForm, self).__init__(*args, *kwargs)
-        self.fields['user'].initial = self.user
+    #def __init__(self, *args, **kwargs):
+     #   super(BuyPlanForm, self).__init__(*args, **kwargs)
+      #  for field in self.fields.values():
+       #     if isinstance(field.widget, forms.Select):
+         #       field.widget = forms.RadioSelect()
+
+
+"""
+class BuyPlanForm(forms.ModelForm):
+    error_css_class = 'error-field'
+    required_css_class = 'required-field'
+
+    class Meta():
+        model = Orders
+        fields = ['pack']
+
+    """

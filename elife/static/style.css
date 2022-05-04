@@ -43,8 +43,18 @@ site-header .navbar-nav .nav-link {
 .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
     margin-top: 2em;
+    gap: 25px;
+}
+.big-card {
+    display: inline-block;
+}
+
+.big-card .radio {
+    display: inline-block;
+}
+.big-card .card {
+    display: inline-block;
 }
 
 .card {
