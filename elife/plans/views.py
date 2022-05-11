@@ -21,7 +21,7 @@ def plans(request):
 
 class UserBuyPlan(LoginRequiredMixin, View):
     template = 'plans/plan.html'
-    success_url = reverse_lazy('home-home')
+    success_url = reverse_lazy('payment- summary')
     login_url = '/login/'
 
     def get(self, request):
@@ -44,8 +44,6 @@ class UserBuyPlan(LoginRequiredMixin, View):
         make = form.save()
         return redirect(self.success_url)
 
-    
-    
 """
 class UserBuyPlan(LoginRequiredMixin, CreateView):
     template_name = 'plans/plan.html'
