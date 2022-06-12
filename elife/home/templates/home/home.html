@@ -1,4 +1,17 @@
 {% extends "home/base.html" %}
+{% load static %}
 {% block content %}
     <h1>Elife - Home</h1>
+    <div class="content">
+        <img src="{% static 'home/crousel1.jpg' %}" alt="">
+        <br />
+        <br />
+        <br />
+        <img src="{% static 'home/crousel2.jpg' %}" alt="">
+        <br />
+        <br />
+        <br />
+        <img src="{% static 'home/crousel3.jpg' %}" alt="">
+
+    </div>
 {% endblock content %}
